@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'S-CoreDream-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Danjo-bold-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iceJaram-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil3Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+.wp_wrap h2, .wp_wrap h3, .wp_wrap h4, .wp_wrap h5, .wp_wrap h6, strong { font-family: var(--font-presb); font-weight: 700; }
+.wp_wrap h2 { font-size: 40px; }
+.wp_wrap h3 { font-size: 30px; }
+.wp_wrap h4 { font-size: 24px; }
+.wp_wrap h5 { font-size: 18px; }
+.wp_wrap h6 { font-size: 16px; }
+.wp_wrap p {line-height: 1.5;}
+
+@media (max-width: 767px) {
+    .wp_wrap h2 { font-size: 24px; }
+    .wp_wrap h3 { font-size: 22px; }
+    .wp_wrap h4 { font-size: 18px; }
+    .wp_wrap h5 { font-size: 16px; }
+    .wp_wrap h6 { font-size: 14px; }
+}
+
+/* color */
+.white { color: #fff; }
+.black { color: #222; }
+.green { color: #064736; }
+.gold { color: #baa264; }
+.lgold { color: #beb292; }
+.llgold { color: #F9EEDC; }
+.lblue { color: #9CB5D4; }
+.lgreen { color: #507772 !important; }
+.llgreen { color: #67A07D; }
+.lllgreen { color: #93BFA8; }
+.lllgreen { color: #93BFA8; }
+.wgreen { color: #C6DFDB; }
+
+.bg_white { background-color: #fff; }
+.bg_black { background-color: #222; }
+.bg_green { background-color: #064736; }
+.bg_gold { background-color: #baa264; }
+.bg_lgold { background-color: #beb292; }
+.bg_dgold { background-color: #90815a; }
+
+/* font */
+.fs48 {font-size: 40px;}
+.fs36 {font-size: 30px;}
+.fs24 {font-size: 24px;}
+.fs18 {font-size: 18px;}
+.fs16 {font-size: 16px;}
+.scdream_r {font-family: 'S-CoreDream-Regular' !important; letter-spacing: -0.08em;}
+.scdream_EB {font-family: 'S-CoreDream-Bold' !important; letter-spacing: -0.08em;}
+.bookk {font-family: 'BookkMyungjo-Bd' !important; letter-spacing: -0.08em; line-height: 1.2;}
+.nsneo_r {font-family: 'NanumSquareNeo-Variable' !important; font-weight: 300; letter-spacing: -0.05em; line-height: 1.2;}
+.nsneo {font-family: 'NanumSquareNeo-Variable' !important; font-weight: 600; letter-spacing: -0.05em; line-height: 1.2;}
+.komacon {font-family: 'KOMACON' !important; line-height: 1.2; letter-spacing: -0.05em;}
+.gmarket {font-family: 'GmarketSansMedium' !important; line-height: 1.2; letter-spacing: -0.05em;}
+.jamsil {font-family: 'TheJamsil3Regular' !important; line-height: 1.2; letter-spacing: -0.05em; font-weight: 300 !important;}
+
+@media (max-width: 767px) {
+    .fs48 {font-size: 24px;}
+    .fs36 {font-size: 22px;}
+    .fs24 {font-size: 18px;}
+    .fs18 {font-size: 16px;}
+    .fs16 {font-size: 14px;}
+}
+
+/* align */
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+
+/* margin */
+.mgt10 { margin-top: 10px; }
+.mgt20 { margin-top: 20px; }
+.mgt30 { margin-top: 30px; }
+.mgt40 { margin-top: 40px; }
+.mgt50 { margin-top: 50px; }
+.wp_wrap .wp_grid.wp_g_gap-140 {gap: 140px;}
+
+@media (max-width: 767px) {
+    .wp_wrap .mgt10 { margin-top: 7px; }
+    .wp_wrap .mgt20 { margin-top: 15px; }
+    .wp_wrap .mgt30 { margin-top: 20px; }
+    .wp_wrap .mgt40 { margin-top: 25px; }
+    .wp_wrap .mgt50 { margin-top: 30px; }
+}
+
+/* container */
+.wp_wrap main .s_gl { padding: 100px 0; }
+.wp_wrap .cm_inner { width: 1200px; margin: 0 auto; }
+
+@media (max-width: 1200px) {
+    .wp_wrap main .s_gl { padding: 50px 0; }
+    .wp_wrap .cm_inner { width: 100%; padding: 0 10px; }
+}
+
+.wp_wrap main .s_tit_box { margin-bottom: 50px; }
+.wp_wrap main .s_gl .s_tit_box { margin-bottom: 50px; }
+
+/* button */
+.wp_wrap .green_btn { color: #fff; background: #064736; padding: 13px 15px 9px 15px; border-radius: 5px; font-size: 16px; display: inline-block; }
+.next_btn { background-image: url(/img/main/nav_next.png); background-position: center center; background-repeat: no-repeat; width: 50px; height: 50px; display: inline-block; text-indent: -9999px; }
+.prev_btn { background-image: url(/img/main/nav_prev.png); background-position: center center; background-repeat: no-repeat; width: 50px; height: 50px; display: inline-block; text-indent: -9999px; }
+
+/* 메인 */
+.wp_wrap main .s_slide li .slide_txt_box .cm_inner { width: 1470px; margin: 0 auto; padding: 0 20px;}
+.wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt h2 { font-size: 40px; color: #064736; font-family: var(--font-prem); font-weight: 500; }
+.wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt h2 strong { font-family: var(--font-presb); }
+.wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt p { margin-top: 40px; font-size: 24px; color: #222; line-height: 1.5; }
+.wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt p span { color: #fff; background-color: #90815a; font-weight: 700; }
+
+@media (max-width: 767px) {
+    .wp_wrap main .s_slide li .slide_txt_box {align-items: normal;}
+    .wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt h2 { font-size: 28px; }
+    .wp_wrap main .s_slide li .slide_txt_box .cm_inner {width: 100%; padding: 0 10px;}
+    .wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner { display: block; padding: 70px 0 0; }
+    .wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt p {margin-top: 15px; font-size: 17px;}
+}
+
+/* 방문재활 */
+.wp_wrap .section01 { background: #064736; padding: 100px 0 0 0; }
+.section01 .section01_content { width: 1100px; margin: -50px auto 0 auto; position: relative; bottom: -50px; }
+.section01 .text_box_wrap { background: #f9f2e0;}
+.section01 .text_box_wrap .text_box { padding: 40px; }
+.section01 .text_box_wrap .text_box ul li { padding: 8px 0 8px 35px; position: relative; font-size: 16px; line-height: 1.5; }
+.section01 .text_box_wrap .text_box ul li strong { color: #fff; width: 25px; height: 25px; top: 6px; left: 0;  position: absolute; background: #064736; border-radius: 50%; text-align: center; padding-top: 1px; }
+
+@media (max-width: 767px) {
+    .wp_wrap .section01 { padding: 50px 0 0 0; }
+    .wp_wrap .wp_grid.wp_g_gap-140 { gap: 20px; }
+    .wp_wrap .section01 .section01_content.wp_grid.wp_g-2 { grid-template-columns: 1fr; width: 100%; }
+    .section01 .text_box_wrap .text_box { padding: 20px; }
+}
+
+/* 의료진 */
+.wp_wrap main .s_gl.section02 { padding: 150px 0 100px 0; }
+.section02 .section02_content { grid-template-columns: 2fr 1fr; }
+.section02 .section02_content .therapist_wrap {padding: 0 25px; position: relative; overflow: hidden;}
+.section02 .section02_content .therapist_wrap .therapist {position: relative;}
+.section02 .section02_content .therapist_wrap .therapist .text_box {position: absolute; top: 50%; transform: translate(0, -50%); padding-left: 100px;}
+.section02 .section02_content .therapist_wrap .slide_nav .prev_btn {position: absolute; top: 50%; transform: translate(0, -50%);left: 0;}
+.section02 .section02_content .therapist_wrap .slide_nav .next_btn {position: absolute; top: 50%; transform: translate(0, -50%);right: 0;}
+.section02 .section02_content .therapist_wrap .therapist .text_box ul li {padding: 5px 0;}
+.section02 .section02_content .text_box_wrap { display: grid; align-items: center; }
+
+@media (max-width: 767px) {
+    .wp_wrap main .s_gl.section02 { padding: 100px 0 50px 0; }
+    .section02 .section02_content {grid-template-columns: 1fr;}
+    .section02 .section02_content .therapist_wrap { padding: 0 10px; }
+    .section02 .section02_content .therapist_wrap .therapist .text_box { position: absolute; top: 50%; transform: translate(0, -50%);padding-left: 15px;}
+    .section02 .section02_content .therapist_wrap .therapist .text_box .fs18 { font-size: 14px; }
+    .section02 .section02_content .text_box_wrap .text_box{ padding: 20px 0; }
+    .section02 .section02_content .therapist_wrap .slide_nav {
+        display: flex;
+        padding: 0 40px;
+        justify-content: space-between;
+        margin-top: -30px;
+    }
+    .section02 .section02_content .therapist_wrap .slide_nav > div {width: 100%; display: flex;}
+    .section02 .section02_content .therapist_wrap .slide_nav > div:nth-child(1) {justify-content: right;}
+    .section02 .section02_content .therapist_wrap .slide_nav .prev_btn, .section02 .section02_content .therapist_wrap .slide_nav .next_btn {position: relative; transform: translate(0,0); top: 0;}
+    .section02 .section02_content .therapist_wrap .slide_nav .prev_btn {left: 0;}
+    .section02 .section02_content .therapist_wrap .slide_nav .next_btn {right: 0;}
+}
+
+/* 프로그램 */
+.section03 { background: url(/img/main/section3_bg.jpg) left center no-repeat #f9f2e0; background-size: 44% 100%; }
+.section03 .section03_content { grid-template-columns: 1fr 2fr; }
+.section03 .section03_content .text_wrap { display: grid; align-items: center; }
+.wp_wrap .wp_grid .program_box ul { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; }
+.section03 .program_box ul li {position: relative; box-shadow: 0 7px 15px rgba(0,0,0,0.25);}
+.section03 .program_box ul li p {position: absolute; top: 10px; left: -10px; background: #064736; padding: 7px 10px 5px 10px; font-size: 18px;}
+
+@media (max-width: 767px) {
+    .section03 {
+        background-size: cover;
+    }
+    .section03 .section03_content {
+        grid-template-columns: 1fr;
+    }
+    .section03 .section03_content .text_wrap {
+        text-align: center; margin-bottom: 50px;
+    }
+    .wp_wrap .wp_grid .program_box ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+    .section03 .program_box ul li img {
+        display: block;
+    }
+    .section03 .program_box ul li p {
+        position: relative;
+        top: auto;
+        left: auto;
+        background: #064736;
+        padding: 7px 10px 5px 10px;
+        font-size: 12px;
+    }
+}
+
+/* 센터 1 */
+.wp_wrap .section04 {position: relative; z-index: 1; padding: 100px 0 0 0;}
+.section04_wrap { background: url(/img/main/section4_1_bg.jpg) right bottom no-repeat; background-size: 44%; }
+.section04 .section04_content {grid-template-columns: 3fr 1fr; position: relative;}
+.section04 .center_photo_wrap {padding: 120px 60px 120px 0;}
+.section04 .center_photo_wrap .photo_wrap { gap: 50px; align-items: center; display: grid; }
+.section04 .center_photo_wrap .slide_nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: absolute; right: 0; margin-top: -50px; }
+.section04 .center_photo_wrap .photo_wrap .slick-track {display: flex; align-items: center; }
+.section04 .center_photo_wrap .photo_wrap .slick-track > div { box-shadow: 0 7px 15px rgba(0,0,0,0.25); margin: 0 25px; }
+.section04 .text_box_wrap {display: grid; align-items: center;}
+
+@media (max-width: 992px) {
+    .wp_wrap .section04 {
+        padding: 50px 0 0 0;
+    }
+    .section04_wrap { background-size: 100%; background-color: #0c4128; }
+    .section04 .section04_content {
+        grid-template-columns: 1fr;
+    }
+    .section04 .center_photo_wrap {
+        padding: 40px 0 20px 0;
+    }
+    .section04 .text_box_wrap {
+        padding: 30px 0 50px 0;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    .section04_wrap { background-size: 70%; }
+}
+@media (min-width: 1201px) and (max-width: 1560px) {
+    .section04_wrap { background-size: 60%; }
+}
+
+/* 센터 2 */
+.wp_wrap .section04_2 { background: url(/img/main/section4_bg.jpg) center center no-repeat; background-size: cover; position: relative; top: -50px; z-index: 0; padding: 150px 0 100px 0; margin-bottom: -50px; }
+.section04_2 .section04_2_content ul { grid-template-columns: 1fr 1fr 1fr; gap: 76px; }
+.section04_2 .section04_2_content ul li { background: #f9f2e0; box-shadow: 0 7px 15px rgba(0,0,0,0.25);}
+.section04_2 .section04_2_content ul li img { display: block; width: 100%; }
+.section04_2 .section04_2_content ul li .text_box {padding: 30px;}
+
+@media (max-width: 767px) {
+    .wp_wrap .section04_2 {
+        padding: 100px 0 50px 0;
+        margin-bottom: -50px;
+    }
+    .section04_2 .section04_2_content ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .section04_2 .section04_2_content ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* 상담 */
+.wp_wrap .section05 {background: #f7f7f9; padding: 100px 0 0 0; position: relative;}
+.section05 .section05_content {text-align: center;}
+.section05 .section05_content > ul {max-width: 750px; margin: 0 auto; position: relative; z-index: 1;}
+.section05 .section05_content > ul > li {display: grid; justify-content: center; padding: 20px 0;}
+.section05 .section05_content > ul > li:nth-child(2) ul {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 150px;}
+.section05 .section05_content .icon_box {width: 150px; height: 150px; border-radius: 50%; padding-top: 25px; text-align: center;}
+.section05 .section05_content .icon_box p {background-position: top center; background-repeat: no-repeat; padding-top: 45px;}
+.section05 .section05_content .icon_box.step1 p {background-image: url(/img/main/icon_step1.png);}
+.section05 .section05_content .icon_box.step2 p {background-image: url(/img/main/icon_step2.png);}
+.section05 .section05_content .icon_box.step3 p {background-image: url(/img/main/icon_step3.png);}
+.section05 .section05_content .icon_box.step4 p {background-image: url(/img/main/icon_step4.png);}
+.section05 .section05_content .icon_box.step5 p {background-image: url(/img/main/icon_step5.png);}
+.section05 .img_park {background: url(/img/main/section5_01.jpg) left bottom no-repeat; padding: 330px 0 90px 515px; position: absolute; bottom: 0; left: -8%; z-index: 0;}
+.section05 .img_kim {background: url(/img/main/section5_02.jpg) right bottom no-repeat; padding: 330px 555px 90px 0; position: absolute; bottom: 0; right: -8%; z-index: 0;}
+
+@media (max-width: 992px) {
+    .wp_wrap .section05 { padding: 50px 0 0 0; }
+    .wp_wrap main .s_tit_box {margin-bottom: 30px;}
+    .section05 .section05_content > ul { max-width: 100%; }
+    .section05 .section05_content > ul > li { padding: 10px 0; }
+    .section05 .section05_content > ul > li:nth-child(2) ul { gap: 20px; }
+    .section05 .img_wrap > div { background-size: 75%; }
+    .section05 .section05_content .icon_box { width: 100px; height: 100px; padding-top: 10px; }
+    .section05 .section05_content .icon_box p { font-size: 13px; padding-top: 40px; }
+    /*.section05 .img_park { background: url(/img/main/section5_01.jpg) left 67% bottom no-repeat; padding: 330px 0 90px 175px; }
+    .section05 .img_kim { background: url(/img/main/section5_02.jpg) right 67% bottom no-repeat; padding: 330px 175px 90px 0; }*/
+    .section05 .img_park { background: url(/img/main/section5_01.jpg) left -50% bottom no-repeat; padding: 100px 0 50px 180px; left: 0; }
+    .section05 .img_kim { background: url(/img/main/section5_02.jpg) right -50% bottom no-repeat; padding: 100px 180px 50px 0; right: 0; }
+}
+@media (max-width: 800px) {
+    .section05 .img_wrap > div { background-size: cover; }
+    .section05 .pcver {display: none;}
+}
+@media (max-width: 520px) {
+    .section05 .img_wrap > div { background-size: cover; }
+    .section05 .section05_content .icon_box { width: 100px; height: 100px; padding-top: 10px; }
+    .section05 .img_park { background: url(/img/main/section5_01.jpg) left 67% bottom no-repeat; padding: 100px 0 50px 180px; left: 0; }
+    .section05 .img_kim { background: url(/img/main/section5_02.jpg) right 67% bottom no-repeat; padding: 100px 180px 50px 0; right: 0; }
+}
+@media (min-width: 993px ) and (max-width: 1100px) {
+    .section05 .img_wrap > div { background-size: 80%; }
+    .section05 .img_park {left: -17%; padding: 220px 0 90px 350px; }
+    .section05 .img_kim {right: -17%; padding: 220px 350px 90px 0; }
+}
+@media (min-width: 1101px ) and (max-width: 1320px) {
+    .section05 .img_park {left: -22%;}
+    .section05 .img_kim {right: -24%;}
+}
+@media (min-width: 1920px ) {
+.section05 .img_park {left: 0;}
+.section05 .img_kim {right: 0;}
+}
+
+/* quick menu */
+#quick_box { width: 100%; background: #fff; padding: 15px 0; border-top: 1px solid #ddd !important; bottom: 0 !important; }
+#quick_box ul { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+#quick_box ul li { text-align: center; background: transparent !important; justify-content: center; }
+#quick_box ul li a { display: block !important; }
+#quick_box ul li a img { display: inline-block; width: 30px; }
+#quick_box ul li p { font-size: 14px; margin-top: 5px; }
+.wp_wrap #quick_box .quik_list .list_top button { background: transparent !important; color: #222 !important; padding: 0 !important; }
+
+@media (max-width: 767px) {
+    #quick_box ul li a img { display: inline-block; width: 30px; }
+    #quick_box ul li p { font-size: 12px; }
+}
+
+/* footer */
+footer {background: #fff !important; border-top: 2px solid #222; padding: 30px 0 70px 0 !important;}
+footer .footer_inner {position: relative;}
+footer .footer_inner .logo_footer {position: absolute; left: 0; top: 0;}
+footer .footer_inner .footer_content { display: block !important; padding-left: 350px; text-align: left !important; color: #777;}
+footer .footer_inner .footer_content span { color: #ccc;}
+
+@media (max-width: 767px) {
+    footer .footer_inner .logo_footer {position: relative; left: 0; top: 0; margin-bottom: 10px;}
+    footer .footer_inner .footer_content { padding-left: 0; }
+}
+
+/* Main Slide 모바일 */
+@media(max-width: 520px) {
+    .wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt p {font-size: 14px;}
+    .wp_wrap main .s_slide li .slide_txt_box .slide_txt_inner .txt_frame .slide_txt h2 {font-size: 24px;}
+    .wp_wrap .mgt50 {margin-top:15px;}
+    .wp_wrap .green_btn {font-size: 14px;}
+}

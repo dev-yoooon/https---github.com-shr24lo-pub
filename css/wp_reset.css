@@ -1,0 +1,399 @@
+/**
+ * Created by PhpStorm.
+ * Date         : 2021-11-09
+ * Developer    : SeHwan Hwang
+ * Description  : wp_reset.css
+ * ⓒ 2021. WebPlanet Co. All Rights Reserved.
+ */
+
+@charset "utf-8";
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+
+/**********************************************************************************************************************/
+/* Device Error */
+/**********************************************************************************************************************/
+/* * {
+아이폰 폰트사이즈 초기화(폰트사이즈가 안먹히는 경우)
+-webkit-text-size-adjust:none;
+
+
+아이폰 CSS 애니메이션으로 인해 깜박임 발생
+-webkit-transform: translate3d(0,0,0);
+-webkit-backface-visibility: hidden;
+
+아이폰 iOS 사파리에서 스크롤 시 발생하는 출렁이는 효과 (bounce effect) 없애기
+-webkit-overflow-scrolling:auto;
+} */
+
+
+/**********************************************************************************************************************/
+/* HTML Reset CSS */
+/**********************************************************************************************************************/
+
+html {font-size: 10px;}
+
+/* 여백 및 라인 초기화 */
+body,
+.wp_wrap,
+.wp_wrap div, .wp_wrap ul, .wp_wrap li, .wp_wrap dl, .wp_wrap dd, .wp_wrap dt, .wp_wrap ol,
+.wp_wrap h1, .wp_wrap h2, .wp_wrap h3, .wp_wrap h4, .wp_wrap h5, .wp_wrap h6,
+.wp_wrap input, .wp_wrap fieldset, .wp_wrap legend, .wp_wrap p, .wp_wrap select,
+.wp_wrap table, .wp_wrap th, .wp_wrap td, .wp_wrap tr, .wp_wrap textarea, .wp_wrap button,
+.wp_wrap form, .wp_wrap figure, .wp_wrap figcaption, .wp_wrap pre,
+.wp_wrap header, .wp_wrap nav, .wp_wrap footer, .wp_wrap main, .wp_wrap section, .wp_wrap aside, .wp_wrap article
+{margin:0; padding:0; box-sizing: border-box;}
+
+/* a 링크 초기화 */
+.wp_wrap a {color: #222; text-decoration: none;}
+.wp_wrap a:hover {color: #2698cb;}
+
+/* 폰트 초기화 */
+body,
+.wp_wrap input, .wp_wrap textarea, .wp_wrap select, .wp_wrap button, .wp_wrap table, .wp_wrap pre
+{font-family:'Noto Sans KR', AppleSDGothicNeo-Regular, 'Pretendard-Regular', 'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 1.5rem; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+.wp_wrap em, .wp_wrap address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+.wp_wrap ul, .wp_wrap li, .wp_wrap ol {list-style:none;}
+
+/* 제목 태그 초기화 */
+.wp_wrap h1, .wp_wrap h2, .wp_wrap h3, .wp_wrap h4, .wp_wrap h5, .wp_wrap h6 {font-size: 1.5rem; font-weight: 300;}
+
+/* 테두리 초기화 */
+.wp_wrap img, .wp_wrap fieldset {border:0 none;}
+
+/* 버튼 초기화 */
+.wp_wrap button {border: 0;}
+
+/* 반응형 */
+.wp_wrap video, .wp_wrap img {max-width: 100%;}
+
+/*이미지여백 제거*/
+.wp_wrap img {display: block;}
+
+/* 클릭 가능한 요소에 포인트 커서 */
+.wp_wrap a[href],
+.wp_wrap input[type='checkbox'],
+.wp_wrap input[type='radio'],
+.wp_wrap input[type='submit'],
+.wp_wrap input[type='image'],
+.wp_wrap label[for],
+.wp_wrap select,
+.wp_wrap button,
+.wp_wrap .pointer{ cursor: pointer;}
+
+/**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************/
+/* 기본 style */
+/**********************************************************************************************************************/
+
+/* clearfix : 자식태그가 float:left를 사용할경우 부모태그에 overflow:hidden 대신 사용하면 됩니다. */
+.wp_wrap .clearfix {*zoom:1;}
+.wp_wrap .clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.wp_wrap .clearfix:after {clear: both;}
+
+/* IR 효과 */
+.wp_wrap .ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;}              /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.wp_wrap .ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;}      /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.wp_wrap .ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}   /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* 말줄임 효과 */
+.wp_wrap .ellipsis1 {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}                                                       /* 한줄 효과 */
+.wp_wrap .ellipsis2 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;} /* 두줄 효과 */
+.wp_wrap .ellipsis3 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;} /* 세줄 효과 */
+
+/* 버튼 */
+
+
+
+
+/* 배경색 */
+.wp_wrap .bgc1 {background-color: #ffebee;}
+.wp_wrap .bgc2 {background-color: #ffcdd2;}
+.wp_wrap .bgc3 {background-color: #ef9a9a;}
+.wp_wrap .bgc4 {background-color: #e57373;}
+.wp_wrap .bgc5 {background-color: #ef5350;}
+.wp_wrap .bgc6 {background-color: #f44336;}
+.wp_wrap .bgc7 {background-color: #e53935;}
+.wp_wrap .bgc8 {background-color: #d32f2f;}
+.wp_wrap .bgc9 {background-color: #c62828;}
+.wp_wrap .bgc10 {background-color: #b71c1c;}
+.wp_wrap .bgc11 {background-color: #ff8a80;}
+.wp_wrap .bgc12 {background-color: #ff5252;}
+.wp_wrap .bgc13 {background-color: #ff1744;}
+.wp_wrap .bgc14 {background-color: #d50000;}
+
+/* margin */
+.wp_wrap .mg5 {margin: 5px;}
+.wp_wrap .mg10 {margin: 10px;}
+.wp_wrap .mg15 {margin: 15px;}
+.wp_wrap .mg20 {margin: 20px;}
+.wp_wrap .mg25 {margin: 25px;}
+.wp_wrap .mg30 {margin: 30px;}
+.wp_wrap .mg35 {margin: 35px;}
+.wp_wrap .mg40 {margin: 40px;}
+.wp_wrap .mg45 {margin: 45px;}
+.wp_wrap .mg50 {margin: 50px;}
+.wp_wrap .mg55 {margin: 55px;}
+.wp_wrap .mg60 {margin: 60px;}
+.wp_wrap .mg65 {margin: 65px;}
+.wp_wrap .mg70 {margin: 70px;}
+.wp_wrap .mg75 {margin: 75px;}
+.wp_wrap .mg80 {margin: 80px;}
+.wp_wrap .mg85 {margin: 85px;}
+.wp_wrap .mg90 {margin: 90px;}
+.wp_wrap .mg95 {margin: 95px;}
+.wp_wrap .mg100 {margin: 100px;}
+
+.wp_wrap .mgt5 {margin-top: 5px;}
+.wp_wrap .mgt10 {margin-top: 10px;}
+.wp_wrap .mgt15 {margin-top: 15px;}
+.wp_wrap .mgt20 {margin-top: 20px;}
+.wp_wrap .mgt25 {margin-top: 25px;}
+.wp_wrap .mgt30 {margin-top: 30px;}
+.wp_wrap .mgt35 {margin-top: 35px;}
+.wp_wrap .mgt40 {margin-top: 40px;}
+.wp_wrap .mgt45 {margin-top: 45px;}
+.wp_wrap .mgt50 {margin-top: 50px;}
+.wp_wrap .mgt55 {margin-top: 55px;}
+.wp_wrap .mgt60 {margin-top: 60px;}
+.wp_wrap .mgt65 {margin-top: 65px;}
+.wp_wrap .mgt70 {margin-top: 70px;}
+.wp_wrap .mgt75 {margin-top: 75px;}
+.wp_wrap .mgt80 {margin-top: 80px;}
+.wp_wrap .mgt85 {margin-top: 85px;}
+.wp_wrap .mgt90 {margin-top: 90px;}
+.wp_wrap .mgt95 {margin-top: 95px;}
+.wp_wrap .mgt100 {margin-top: 100px;}
+
+.wp_wrap .mgb5 {margin-bottom: 5px;}
+.wp_wrap .mgb10 {margin-bottom: 10px;}
+.wp_wrap .mgb15 {margin-bottom: 15px;}
+.wp_wrap .mgb20 {margin-bottom: 20px;}
+.wp_wrap .mgb25 {margin-bottom: 25px;}
+.wp_wrap .mgb30 {margin-bottom: 30px;}
+.wp_wrap .mgb35 {margin-bottom: 35px;}
+.wp_wrap .mgb40 {margin-bottom: 40px;}
+.wp_wrap .mgb45 {margin-bottom: 45px;}
+.wp_wrap .mgb50 {margin-bottom: 50px;}
+.wp_wrap .mgb55 {margin-bottom: 55px;}
+.wp_wrap .mgb60 {margin-bottom: 60px;}
+.wp_wrap .mgb65 {margin-bottom: 65px;}
+.wp_wrap .mgb70 {margin-bottom: 70px;}
+.wp_wrap .mgb75 {margin-bottom: 75px;}
+.wp_wrap .mgb80 {margin-bottom: 80px;}
+.wp_wrap .mgb85 {margin-bottom: 85px;}
+.wp_wrap .mgb90 {margin-bottom: 90px;}
+.wp_wrap .mgb95 {margin-bottom: 95px;}
+.wp_wrap .mgb100 {margin-bottom: 100px;}
+
+.wp_wrap .mgl5 {margin-left: 5px;}
+.wp_wrap .mgl10 {margin-left: 10px;}
+.wp_wrap .mgl15 {margin-left: 15px;}
+.wp_wrap .mgl20 {margin-left: 20px;}
+.wp_wrap .mgl25 {margin-left: 25px;}
+.wp_wrap .mgl30 {margin-left: 30px;}
+.wp_wrap .mgl35 {margin-left: 35px;}
+.wp_wrap .mgl40 {margin-left: 40px;}
+.wp_wrap .mgl45 {margin-left: 45px;}
+.wp_wrap .mgl50 {margin-left: 50px;}
+.wp_wrap .mgl55 {margin-left: 55px;}
+.wp_wrap .mgl60 {margin-left: 60px;}
+.wp_wrap .mgl65 {margin-left: 65px;}
+.wp_wrap .mgl70 {margin-left: 70px;}
+.wp_wrap .mgl75 {margin-left: 75px;}
+.wp_wrap .mgl80 {margin-left: 80px;}
+.wp_wrap .mgl85 {margin-left: 85px;}
+.wp_wrap .mgl90 {margin-left: 90px;}
+.wp_wrap .mgl95 {margin-left: 95px;}
+.wp_wrap .mgl100 {margin-left: 100px;}
+
+.wp_wrap .mgr5 {margin-right: 5px;}
+.wp_wrap .mgr10 {margin-right: 10px;}
+.wp_wrap .mgr15 {margin-right: 15px;}
+.wp_wrap .mgr20 {margin-right: 20px;}
+.wp_wrap .mgr25 {margin-right: 25px;}
+.wp_wrap .mgr30 {margin-right: 30px;}
+.wp_wrap .mgr35 {margin-right: 35px;}
+.wp_wrap .mgr40 {margin-right: 40px;}
+.wp_wrap .mgr45 {margin-right: 45px;}
+.wp_wrap .mgr50 {margin-right: 50px;}
+.wp_wrap .mgr55 {margin-right: 55px;}
+.wp_wrap .mgr60 {margin-right: 60px;}
+.wp_wrap .mgr65 {margin-right: 65px;}
+.wp_wrap .mgr70 {margin-right: 70px;}
+.wp_wrap .mgr75 {margin-right: 75px;}
+.wp_wrap .mgr80 {margin-right: 80px;}
+.wp_wrap .mgr85 {margin-right: 85px;}
+.wp_wrap .mgr90 {margin-right: 90px;}
+.wp_wrap .mgr95 {margin-right: 95px;}
+.wp_wrap .mgr100 {margin-right: 100px;}
+
+/* padding */
+.wp_wrap .pd5 {padding: 5px;}
+.wp_wrap .pd10 {padding: 10px;}
+.wp_wrap .pd15 {padding: 15px;}
+.wp_wrap .pd20 {padding: 20px;}
+.wp_wrap .pd25 {padding: 25px;}
+.wp_wrap .pd30 {padding: 30px;}
+.wp_wrap .pd35 {padding: 35px;}
+.wp_wrap .pd40 {padding: 40px;}
+.wp_wrap .pd45 {padding: 45px;}
+.wp_wrap .pd50 {padding: 50px;}
+.wp_wrap .pd55 {padding: 55px;}
+.wp_wrap .pd60 {padding: 60px;}
+.wp_wrap .pd65 {padding: 65px;}
+.wp_wrap .pd70 {padding: 70px;}
+.wp_wrap .pd75 {padding: 75px;}
+.wp_wrap .pd80 {padding: 80px;}
+.wp_wrap .pd85 {padding: 85px;}
+.wp_wrap .pd90 {padding: 90px;}
+.wp_wrap .pd95 {padding: 95px;}
+.wp_wrap .pd100 {padding: 100px;}
+
+.wp_wrap .pdt5 {padding-top: 5px;}
+.wp_wrap .pdt10 {padding-top: 10px;}
+.wp_wrap .pdt15 {padding-top: 15px;}
+.wp_wrap .pdt20 {padding-top: 20px;}
+.wp_wrap .pdt25 {padding-top: 25px;}
+.wp_wrap .pdt30 {padding-top: 30px;}
+.wp_wrap .pdt35 {padding-top: 35px;}
+.wp_wrap .pdt40 {padding-top: 40px;}
+.wp_wrap .pdt45 {padding-top: 45px;}
+.wp_wrap .pdt50 {padding-top: 50px;}
+.wp_wrap .pdt55 {padding-top: 55px;}
+.wp_wrap .pdt60 {padding-top: 60px;}
+.wp_wrap .pdt65 {padding-top: 65px;}
+.wp_wrap .pdt70 {padding-top: 70px;}
+.wp_wrap .pdt75 {padding-top: 75px;}
+.wp_wrap .pdt80 {padding-top: 80px;}
+.wp_wrap .pdt85 {padding-top: 85px;}
+.wp_wrap .pdt90 {padding-top: 90px;}
+.wp_wrap .pdt95 {padding-top: 95px;}
+.wp_wrap .pdt100 {padding-top: 100px;}
+
+.wp_wrap .pdb5 {padding-bottom: 5px;}
+.wp_wrap .pdb10 {padding-bottom: 10px;}
+.wp_wrap .pdb15 {padding-bottom: 15px;}
+.wp_wrap .pdb20 {padding-bottom: 20px;}
+.wp_wrap .pdb25 {padding-bottom: 25px;}
+.wp_wrap .pdb30 {padding-bottom: 30px;}
+.wp_wrap .pdb35 {padding-bottom: 35px;}
+.wp_wrap .pdb40 {padding-bottom: 40px;}
+.wp_wrap .pdb45 {padding-bottom: 45px;}
+.wp_wrap .pdb50 {padding-bottom: 50px;}
+.wp_wrap .pdb55 {padding-bottom: 55px;}
+.wp_wrap .pdb60 {padding-bottom: 60px;}
+.wp_wrap .pdb65 {padding-bottom: 65px;}
+.wp_wrap .pdb70 {padding-bottom: 70px;}
+.wp_wrap .pdb75 {padding-bottom: 75px;}
+.wp_wrap .pdb80 {padding-bottom: 80px;}
+.wp_wrap .pdb85 {padding-bottom: 85px;}
+.wp_wrap .pdb90 {padding-bottom: 90px;}
+.wp_wrap .pdb95 {padding-bottom: 95px;}
+.wp_wrap .pdb100 {padding-bottom: 100px;}
+
+.wp_wrap .pdl5 {padding-left: 5px;}
+.wp_wrap .pdl10 {padding-left: 10px;}
+.wp_wrap .pdl15 {padding-left: 15px;}
+.wp_wrap .pdl20 {padding-left: 20px;}
+.wp_wrap .pdl25 {padding-left: 25px;}
+.wp_wrap .pdl30 {padding-left: 30px;}
+.wp_wrap .pdl35 {padding-left: 35px;}
+.wp_wrap .pdl40 {padding-left: 40px;}
+.wp_wrap .pdl45 {padding-left: 45px;}
+.wp_wrap .pdl50 {padding-left: 50px;}
+.wp_wrap .pdl55 {padding-left: 55px;}
+.wp_wrap .pdl60 {padding-left: 60px;}
+.wp_wrap .pdl65 {padding-left: 65px;}
+.wp_wrap .pdl70 {padding-left: 70px;}
+.wp_wrap .pdl75 {padding-left: 75px;}
+.wp_wrap .pdl80 {padding-left: 80px;}
+.wp_wrap .pdl85 {padding-left: 85px;}
+.wp_wrap .pdl90 {padding-left: 90px;}
+.wp_wrap .pdl95 {padding-left: 95px;}
+.wp_wrap .pdl100 {padding-left: 100px;}
+
+.wp_wrap .pdr5 {padding-right: 5px;}
+.wp_wrap .pdr10 {padding-right: 10px;}
+.wp_wrap .pdr15 {padding-right: 15px;}
+.wp_wrap .pdr20 {padding-right: 20px;}
+.wp_wrap .pdr25 {padding-right: 25px;}
+.wp_wrap .pdr30 {padding-right: 30px;}
+.wp_wrap .pdr35 {padding-right: 35px;}
+.wp_wrap .pdr40 {padding-right: 40px;}
+.wp_wrap .pdr45 {padding-right: 45px;}
+.wp_wrap .pdr50 {padding-right: 50px;}
+.wp_wrap .pdr55 {padding-right: 55px;}
+.wp_wrap .pdr60 {padding-right: 60px;}
+.wp_wrap .pdr65 {padding-right: 65px;}
+.wp_wrap .pdr70 {padding-right: 70px;}
+.wp_wrap .pdr75 {padding-right: 75px;}
+.wp_wrap .pdr80 {padding-right: 80px;}
+.wp_wrap .pdr85 {padding-right: 85px;}
+.wp_wrap .pdr90 {padding-right: 90px;}
+.wp_wrap .pdr95 {padding-right: 95px;}
+.wp_wrap .pdr100 {padding-right: 100px;}
+
+/**********************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
